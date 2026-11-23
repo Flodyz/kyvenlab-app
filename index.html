@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>KyvenLab — Baixar para Windows</title>
+    <meta
+      name="description"
+      content="O KyvenLab é um espaço de trabalho para Windows que roda Claude Code, Codex, Antigravity, OpenCode e terminais lado a lado, em terminais de verdade."
+    />
+    <meta name="theme-color" content="#101114" />
+    <link rel="canonical" href="https://app-kyvenlab.kyvensoft.com.br/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://app-kyvenlab.kyvensoft.com.br/" />
+    <link rel="alternate" hreflang="en" href="https://app-kyvenlab.kyvensoft.com.br/en/" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+    <link rel="apple-touch-icon" href="assets/icon-128.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="version.js" defer></script>
+  </head>
+  <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="mark" viewBox="80 80 352 352">
+        <rect x="80" y="80" width="104" height="104" fill="currentColor" />
+        <polygon points="328,80 404,80 432,108 432,184 328,184" fill="currentColor" />
+        <rect x="80" y="204" width="104" height="104" fill="currentColor" />
+        <rect x="204" y="204" width="104" height="104" fill="currentColor" />
+        <rect x="80" y="328" width="104" height="104" fill="currentColor" />
+        <rect x="328" y="328" width="104" height="104" fill="currentColor" />
+      </symbol>
+      <symbol id="win" viewBox="0 0 16 16">
+        <path
+          fill="currentColor"
+          d="M0 2.2 6.5 1.3v6.2H0Zm7.3-1L16 0v7.5H7.3ZM0 8.5h6.5v6.2L0 13.8Zm7.3 0H16V16l-8.7-1.2Z"
+        />
+      </symbol>
+      <symbol id="down" viewBox="0 0 16 16">
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M8 2v8.5M4.5 7 8 10.5 11.5 7M2.5 13.5h11"
+        />
+      </symbol>
+    </svg>
+
+    <header class="top">
+      <div class="wrap">
+        <a class="brand" href="#inicio"
+          ><svg><use href="#mark" /></svg>KyvenLab</a
+        >
+        <nav aria-label="Seções">
+          <a href="#recursos">Recursos</a>
+          <a href="#agentes">Agentes</a>
+          <a href="#instalar">Instalar</a>
+        </nav>
+        <a class="lang" href="en/" hreflang="en" lang="en">English</a>
+        <a
+          class="btn btn-primary btn-sm"
+          href="https://github.com/Flodyz/kyvenlab-app/releases/latest/download/KyvenLab-setup.exe"
+          ><svg><use href="#down" /></svg>Baixar</a
+        >
+      </div>
+    </header>
+
+    <main id="inicio">
+      <div class="hero">
+        <div class="wrap hero-grid">
+          <div>
+            <div class="eyebrow">
+              <span class="dot"></span
+              ><span
+                >Para Windows 10 e 11<span data-needs="version" hidden>
+                  · versão <span data-version></span></span
+              ></span>
+            </div>
+            <h1>Veja o estado de cada agente, terminal e projeto.</h1>
+            <p class="lede">
+              O KyvenLab é um espaço de trabalho para Windows que roda Claude Code, Codex,
+              Antigravity, OpenCode e terminais lado a lado, em terminais de verdade. Um Pilot
+              divide o trabalho entre workers, e você acompanha cada um sem trocar de janela.
+            </p>
+            <div class="cta">
+              <a
+                class="btn btn-primary btn-lg"
+                href="https://github.com/Flodyz/kyvenlab-app/releases/latest/download/KyvenLab-setup.exe"
+                ><svg><use href="#win" /></svg>Baixar para Windows</a
+              >
+              <a class="btn btn-lg" href="https://github.com/Flodyz/kyvenlab-app/releases"
+                >Todas as versões</a
+              >
+            </div>
+            <div class="meta">
+              <span>KyvenLab-setup.exe</span><span>Windows 10/11 · x64</span
+              ><span data-needs="date" data-date hidden></span>
+            </div>
+          </div>
+
+          <!-- WORKSPACE ILLUSTRATION: placeholder drawn in HTML. Replace this whole <figure>
+           with real app screenshots later, and delete the matching block in styles.css. -->
+          <figure class="illustration">
+            <div
+              class="shot"
+              role="img"
+              aria-label="Ilustração do espaço de trabalho do KyvenLab com um Pilot, dois workers e um terminal"
+            >
+              <div class="shot-bar">
+                <div class="tabs">
+                  <span class="tab on">Início</span><span class="tab">Painel</span
+                  ><span class="tab">Aparelhos</span>
+                </div>
+                <span class="ram">RAM 512 MB</span>
+              </div>
+              <div class="shot-body">
+                <div class="col">
+                  <div class="pane">
+                    <div class="pane-head">
+                      <img src="assets/claude-code.png" alt="" />
+                      <span class="pane-title nowrap">Pilot</span><span class="pane-num">#232</span>
+                      <span class="chip active">trabalhando</span>
+                    </div>
+                    <p class="term">
+                      <span class="p">›</span> Dividi a tarefa em duas partes, servidor e app, e
+                      mandei cada uma para um worker.
+                    </p>
+                    <ul class="plan">
+                      <li class="done">
+                        <span class="tick">✓</span
+                        ><span>Ler como as atualizações funcionam hoje</span>
+                      </li>
+                      <li class="done">
+                        <span class="tick">✓</span><span>Escrever o plano das duas partes</span>
+                      </li>
+                      <li class="now">
+                        <span class="tick">●</span><span>Acompanhar os workers #539 e #540</span>
+                      </li>
+                      <li>
+                        <span class="tick">○</span><span>Revisar, juntar e rodar os testes</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="pane">
+                    <div class="pane-head">
+                      <span class="shell-ico">&gt;_</span>
+                      <span class="pane-title nowrap">Terminal</span
+                      ><span class="pane-num">#241</span>
+                      <span class="chip idle">parado</span>
+                    </div>
+                    <p class="term">
+                      <span class="p">PS&gt;</span> npm run build<br /><span class="ok"
+                        >✓ built in 18.4s</span
+                      ><br /><span class="p">PS&gt;</span> <span class="cursor"></span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="pane">
+                    <div class="pane-head">
+                      <img src="assets/claude-code.png" alt="" />
+                      <span class="pane-title nowrap">Servidor de builds</span
+                      ><span class="pane-num">#539</span>
+                      <span class="chip active">trabalhando</span>
+                    </div>
+                    <p class="term">
+                      <span class="c">●</span> Rodando os testes do servidor<br /><span class="p"
+                        >42 de 57 passaram…</span
+                      >
+                    </p>
+                  </div>
+                  <div class="pane">
+                    <div class="pane-head">
+                      <img src="assets/codex.png" alt="" />
+                      <span class="pane-title nowrap">Botões de publicar</span
+                      ><span class="pane-num">#540</span>
+                      <span class="chip review">em revisão</span>
+                    </div>
+                    <p class="term">
+                      <span class="p">›</span> Pronto. Os testes do banner passaram; aguardando a
+                      revisão do Pilot.
+                    </p>
+                  </div>
+                  <div class="pane">
+                    <div class="pane-head">
+                      <img src="assets/open-white.png" alt="" />
+                      <span class="pane-title nowrap">Página de download</span
+                      ><span class="pane-num">#541</span>
+                      <span class="chip waiting">esperando você</span>
+                    </div>
+                    <p class="term">
+                      <span class="w">?</span> Posso publicar a página no repositório público?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="board">
+                <span><b>2</b> trabalhando</span>
+                <span><b>1</b> em revisão</span>
+                <span><b>0</b> na fila</span>
+                <span><b>1</b> esperando você</span>
+                <span><b>4</b> entregues</span>
+              </div>
+            </div>
+            <figcaption class="caption">
+              Ilustração: um Pilot, três workers e um terminal no mesmo projeto.
+            </figcaption>
+          </figure>
+          <!-- END WORKSPACE ILLUSTRATION -->
+        </div>
+      </div>
+
+      <section id="recursos">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="label">Recursos</span>
+            <h2>Vários agentes trabalhando, e você sabe o que cada um está fazendo.</h2>
+          </div>
+          <div class="features">
+            <article class="feature">
+              <span class="k">Terminais</span>
+              <h3>Terminais de verdade, lado a lado</h3>
+              <p>
+                Cada painel é um terminal real. Organize em grade, destaque um ou monte o seu
+                layout, e abra abas dentro do mesmo painel.
+              </p>
+            </article>
+            <article class="feature">
+              <span class="k">Pilot e workers</span>
+              <h3>Um Pilot que divide o trabalho</h3>
+              <p>
+                O Pilot planeja, manda cada parte para um worker em uma cópia isolada do projeto e
+                revisa o que volta. Você vê quem está trabalhando, em revisão ou esperando você.
+              </p>
+            </article>
+            <article class="feature">
+              <span class="k">Continuidade</span>
+              <h3>Volta de onde parou</h3>
+              <p>
+                As conversas e o histórico de cada terminal ficam salvos. Ao reabrir o app, tudo
+                volta no mesmo lugar.
+              </p>
+            </article>
+            <article class="feature">
+              <span class="k">Memória</span>
+              <h3>Leve mesmo com muitos agentes</h3>
+              <p>
+                Um agente parado há 20 minutos hiberna e retoma a mesma conversa quando você clica
+                nele. O uso de RAM fica visível na barra de título.
+              </p>
+            </article>
+            <article class="feature">
+              <span class="k">Sincronização</span>
+              <h3>Os mesmos projetos em todo PC</h3>
+              <p>
+                Projetos, histórico e preferências sincronizam entre os seus computadores, com
+                criptografia de ponta a ponta. A conta é opcional: sem ela, tudo fica só no seu PC.
+              </p>
+            </article>
+            <article class="feature">
+              <span class="k">Celular</span>
+              <h3>Acompanhe pelo celular</h3>
+              <p>
+                Leia o que o Pilot está fazendo, responda uma pergunta ou aprove um pedido pelo
+                telefone, e receba um aviso quando alguém espera por você.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="agentes">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="label">Agentes</span>
+            <h2>Use os agentes que você já tem.</h2>
+            <p>
+              O KyvenLab encontra cada ferramenta instalada no seu PC e abre com a sua própria
+              conta. Os limites de uso de cada uma ficam num só lugar.
+            </p>
+          </div>
+          <div class="agents">
+            <div class="agent">
+              <span class="swatch swatch-claude"></span><img src="assets/claude-code.png" alt="" />
+              <div><strong>Claude Code</strong><span>Anthropic</span></div>
+            </div>
+            <div class="agent">
+              <span class="swatch swatch-codex"></span><img src="assets/codex.png" alt="" />
+              <div><strong>Codex</strong><span>OpenAI</span></div>
+            </div>
+            <div class="agent">
+              <span class="swatch swatch-antigravity"></span
+              ><img src="assets/antigravity.png" alt="" />
+              <div><strong>Antigravity</strong><span>Google · Gemini</span></div>
+            </div>
+            <div class="agent">
+              <span class="swatch swatch-opencode"></span><img src="assets/open-white.png" alt="" />
+              <div><strong>OpenCode</strong><span>código aberto</span></div>
+            </div>
+            <div class="agent">
+              <span class="swatch swatch-shell"></span><span class="shell-ico">&gt;_</span>
+              <div><strong>Terminal</strong><span>PowerShell, cmd, WSL</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="instalar">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="label">Instalar</span>
+            <h2>Instale uma vez. As próximas versões chegam pelo app.</h2>
+          </div>
+          <div class="install">
+            <ol class="steps">
+              <li>
+                <div>
+                  <h3>Baixe o instalador</h3>
+                  <p>
+                    Clique em <strong>Baixar para Windows</strong> e abra o arquivo
+                    <kbd>KyvenLab-setup.exe</kbd>.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>Libere no Windows</h3>
+                  <p>
+                    O instalador ainda não tem assinatura digital, então o SmartScreen pode avisar.
+                    Clique em <kbd>Mais informações</kbd> e depois em
+                    <kbd>Executar assim mesmo</kbd>.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>Entre com o seu convite</h3>
+                  <p>
+                    No app, abra <strong>Sincronizar</strong> e entre com o convite que você
+                    recebeu. Isso liga as atualizações automáticas.
+                  </p>
+                </div>
+              </li>
+            </ol>
+            <div class="update" aria-label="Exemplo do aviso de atualização no app">
+              <div class="update-row">
+                <svg viewBox="0 0 16 16" aria-hidden="true"><use href="#down" /></svg>
+                <div>
+                  <strong class="nowrap">Atualização disponível</strong
+                  ><span class="nowrap">Publicado pelo admin do servidor</span>
+                </div>
+                <span class="btn btn-primary btn-sm" aria-hidden="true">Instalar</span>
+              </div>
+              <ul>
+                <li>Cada versão é assinada e o app só instala o que confere com a assinatura.</li>
+                <li>Você decide quando instalar; o aviso espera.</li>
+              </ul>
+              <p class="note">É assim que o aviso aparece dentro do KyvenLab.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="final">
+        <div class="wrap">
+          <div class="final-box">
+            <div>
+              <h2>Baixe o KyvenLab</h2>
+              <p>
+                Para Windows 10 e 11, 64 bits.<span data-needs="version" hidden>
+                  Versão <span data-version></span>.</span
+                >
+              </p>
+            </div>
+            <div class="cta">
+              <a
+                class="btn btn-primary btn-lg"
+                href="https://github.com/Flodyz/kyvenlab-app/releases/latest/download/KyvenLab-setup.exe"
+                ><svg><use href="#win" /></svg>Baixar para Windows</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <span class="brand"
+          ><svg><use href="#mark" /></svg>KyvenLab</span
+        >
+        <span>Licença AGPL-3.0</span>
+        <div class="right">
+          <a href="https://github.com/Flodyz/kyvenlab-app/releases">Versões</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
